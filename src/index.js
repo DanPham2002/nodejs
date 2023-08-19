@@ -27,6 +27,14 @@ app.get('/news', (req, res) => {
   res.render('news')
 })
 
+app.get('/search', (req, res) => {
+  res.render('search')
+})
+
+app.post('/news', (req,res) => {
+  res.send("Khong tim thay ket qua ma bn mong muon")
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
